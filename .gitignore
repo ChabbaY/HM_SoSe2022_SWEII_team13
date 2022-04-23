@@ -31,3 +31,13 @@ bin/
 /log/
 /src/linus/
 /test/linus/
+
+## Java ##
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt

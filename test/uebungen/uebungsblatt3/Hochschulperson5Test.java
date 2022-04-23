@@ -17,7 +17,7 @@ class Hochschulperson5Test {
                 Hochschule:
                 \tHM""");
 
-        hochschulperson = new Hochschulperson5("Peter Müller", "98765", "TUM", new Adresse5("Hauptstraße", "1", 85747, Ort.München));
+        hochschulperson = new Hochschulperson5("Peter Müller", new Adresse5("Hauptstraße", "1", 85747, Ort.München), "98765", "TUM");
         System.out.println(hochschulperson.getDetails());
         assert hochschulperson.getDetails().equals("""
                 Name:
@@ -68,7 +68,7 @@ class Hochschulperson5Test {
                 Hochschule:
                 \tHM""");
 
-        hochschulperson = new Hochschulperson5("Peter Müller", "98765", null, new Adresse5("Hauptstraße", "1", 85747, Ort.München));
+        hochschulperson = new Hochschulperson5("Peter Müller", new Adresse5("Hauptstraße", "1", 85747, Ort.München), "98765", null);
         System.out.println(hochschulperson.getAssignment());
         assert hochschulperson.getAssignment().equals("Keine Hochschule hinterlegt!");
 
