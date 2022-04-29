@@ -16,9 +16,9 @@ public class Adresse5 {
     }
 
     public Adresse5(Adresse5 adresse) {
-        this.strasse = strasse;
-        this.hausnummer = hausnummer;
-        this.postleitzahl = postleitzahl;
+        this.strasse = adresse.strasse;
+        this.hausnummer = adresse.hausnummer;
+        this.postleitzahl = adresse.postleitzahl;
         this.ort = adresse.ort;
     }
 

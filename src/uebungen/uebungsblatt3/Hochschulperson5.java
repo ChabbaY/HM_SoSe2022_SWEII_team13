@@ -55,7 +55,7 @@ public class Hochschulperson5 implements Person {
             return "Name: " + name + "\nHochschule: " + hochschule + "\n";
         }
         else {
-            return "Keiner Hochschule zugeordnet!";
+            return "Keiner Hochschule zugeordnet!\n";
         }
     }
 }
