@@ -16,6 +16,10 @@ public class Adresse5 {
     }
 
     public Adresse5(Adresse5 adresse) {
+        this.strasse = strasse;
+        this.hausnummer = hausnummer;
+        this.postleitzahl = postleitzahl;
+        this.ort = adresse.ort;
     }
 
     @Override //overrides toString method with costumized adress return.

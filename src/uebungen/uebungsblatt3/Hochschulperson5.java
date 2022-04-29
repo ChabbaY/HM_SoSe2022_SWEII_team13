@@ -31,9 +31,7 @@ public class Hochschulperson5 implements Person {
         return hochschule;
     }
 
-    public String getAdresse(){
-        return adresse.toString();
-    }
+    public Adresse5 getAdresse(){ return adresse; }
 
     public String getDetails() {
         StringBuilder output = new StringBuilder();

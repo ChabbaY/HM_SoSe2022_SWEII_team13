@@ -5,18 +5,11 @@ public class Professor5 extends Hochschulperson5{
     public String fakultaet;
 
     public Professor5(String name, String telefon, String hochschule, String fakultaet) {
-        super(null, null, null);
-        this.name = name;
-        this.telefon = telefon;
-        this.hochschule = hochschule;
+        super(name, telefon, hochschule);
         this.fakultaet = fakultaet;
     }
-    public Professor5(String name, Adresse5 adresse2, String telefon, String hochschule, String fakultaet) {
-        super(null, null, null);
-        this.adresse = new Adresse5(adresse2);
-        this.name = name;
-        this.telefon = telefon;
-        this.hochschule = hochschule;
+    public Professor5(String name, Adresse5 adresse, String telefon, String hochschule, String fakultaet) {
+        super(name, adresse, telefon, hochschule);
         this.fakultaet = fakultaet;
     }
 
@@ -24,29 +17,22 @@ public class Professor5 extends Hochschulperson5{
         return fakultaet;
     }
 
-    public String getDetails(){
-        StringBuilder output = new StringBuilder();
-        if(adresse != null){
-            output.append("Name: \n" + name + "\n");
-            output.append("Telefonnummer: " + telefon + "\n");
-            output.append("Adresse: " + adresse + "\n");
-            output.append(hochschule + ", " + fakultaet + "\n");
+    public String getDetails() {
+        String output = super.getDetails();
+        if (fakultaet != null) {
+            output += (", " + fakultaet + "\n");
+            return output;
+        } else {
+            return "Keiner Fakultät zugeordnet!";
         }
-        else {
-            output.append("Name: \n" + name + "\n");
-            output.append("Telefonnummer: " + telefon + "\n");
-            output.append(hochschule + ", " + fakultaet + "\n");
-        }
-        return output.toString();
     }
 
-    //this method checks wether there is a study group defined for this student or not
     public String getAssignment(){
         if(fakultaet != null){
-            return "Name: " + name + "\nStudiengruppe: " + fakultaet;
+            return "Name: " + name + "\nFakultät: " + fakultaet;
         }
         else {
-            return "Keiner Studiengruppe zugeordnet!";
+            return "Keiner Fakultät zugeordnet!";
         }
     }
 }
