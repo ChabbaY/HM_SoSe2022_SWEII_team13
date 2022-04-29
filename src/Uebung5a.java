@@ -21,8 +21,10 @@ public abstract class Uebung5a implements Person {
         System.out.println(professorZielke.getAssignment());
 
         Hochschulperson5 randomHochschulperson = new Hochschulperson5("Max Mustermann", "017483928374", "HM");
+        System.out.println(randomHochschulperson.getDetails());
+        System.out.println(randomHochschulperson.getAssignment());
 
-        Person one = new Student5();
+        /* Person one = new Student5();
         Person two = new Professor5();
         Person three = new Student5();
         Person four = new Professor5();
@@ -32,6 +34,6 @@ public abstract class Uebung5a implements Person {
         System.out.println(two.getDetails() + "\n\n" + two.getAssignment());
         System.out.println(three.getDetails() + "\n\n" + three.getAssignment());
         System.out.println(four.getDetails() + "\n\n" + four.getAssignment());
-        System.out.println(five.getDetails() + "\n\n" + five.getAssignment());
+        System.out.println(five.getDetails() + "\n\n" + five.getAssignment()); */
     }
 }

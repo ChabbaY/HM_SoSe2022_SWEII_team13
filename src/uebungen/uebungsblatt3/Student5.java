@@ -31,7 +31,7 @@ public class Student5 extends Hochschulperson5 {
     //this method checks wether there is a study group defined for this student or not
     public String getAssignment(){
         if(studiengruppe != null){
-            return "Name: " + name + "\nStudiengruppe: " + studiengruppe;
+            return "Name: " + name + "\nStudiengruppe: " + studiengruppe + "\n";
         }
         else {
             return "Keiner Studiengruppe zugeordnet!";

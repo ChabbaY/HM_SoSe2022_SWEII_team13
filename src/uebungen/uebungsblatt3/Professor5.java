@@ -29,10 +29,10 @@ public class Professor5 extends Hochschulperson5{
 
     public String getAssignment(){
         if(fakultaet != null){
-            return "Name: " + name + "\nFakultät: " + fakultaet;
+            return "Name: " + name + "\nFakultät: " + fakultaet + "\n";
         }
         else {
-            return "Keiner Fakultät zugeordnet!";
+            return "Keiner Fakultät zugeordnet!\n";
         }
     }
 }

@@ -52,7 +52,7 @@ public class Hochschulperson5 implements Person {
 
     public String getAssignment(){
         if(hochschule != null){
-            return "Name: " + name + "\nHochschule: " + hochschule;
+            return "Name: " + name + "\nHochschule: " + hochschule + "\n";
         }
         else {
             return "Keiner Hochschule zugeordnet!";
