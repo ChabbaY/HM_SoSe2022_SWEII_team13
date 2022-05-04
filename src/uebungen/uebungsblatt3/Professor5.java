@@ -19,12 +19,8 @@ public class Professor5 extends Hochschulperson5{
 
     public String getDetails() {
         String output = super.getDetails();
-        if (fakultaet != null) {
-            output += (", " + fakultaet + "\n");
-            return output;
-        } else {
-            return "Keiner Fakultät zugeordnet!";
-        }
+        output += (", " + fakultaet + "\n");
+        return output;
     }
 
     public String getAssignment(){
