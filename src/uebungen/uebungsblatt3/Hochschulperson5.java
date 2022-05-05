@@ -2,16 +2,17 @@ package uebungen.uebungsblatt3;
 
 public class Hochschulperson5 implements Person {
 
-    public String name;
-    public String telefon;
-    public String hochschule;
-    public Adresse5 adresse;
+    protected String name;
+    protected String telefon;
+    protected String hochschule;
+    protected Adresse5 adresse;
 
     public Hochschulperson5(String name, String telefon, String hochschule) {
         this.name = name;
         this.telefon = telefon;
         this.hochschule = hochschule;
     }
+
     public Hochschulperson5(String name, Adresse5 adresse, String telefon, String hochschule) {
         this.name = name;
         this.telefon = telefon;
@@ -48,7 +49,6 @@ public class Hochschulperson5 implements Person {
         }
         return output.toString();
     }
-
 
     public String getAssignment(){
         if(hochschule != null){

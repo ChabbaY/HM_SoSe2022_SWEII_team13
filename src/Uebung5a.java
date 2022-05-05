@@ -30,10 +30,44 @@ public abstract class Uebung5a implements Person {
         Person four = new Professor5("Andreas Zielke", "1234567890", "HM", null);
         Person five = new Hochschulperson5("Max Mustermann", "017483928374", "HM");
 
-        System.out.println(one.getDetails() + "\n\n" + one.getAssignment());
-        System.out.println(two.getDetails() + "\n\n" + two.getAssignment());
-        System.out.println(three.getDetails() + "\n\n" + three.getAssignment());
-        System.out.println(four.getDetails() + "\n\n" + four.getAssignment());
-        System.out.println(five.getDetails() + "\n\n" + five.getAssignment());
+        if(one instanceof Student5){
+            System.out.println(((Student5) one).getDetails());
+        }
+        else {
+            System.out.println("Nicht kompatibel");
+        }
+        System.out.println(one.getAssignment());
+
+        if(two instanceof Professor5){
+            System.out.println(((Professor5) two).getDetails());
+        }
+        else {
+            System.out.println("Nicht kompatibel");
+        }
+        System.out.println(two.getAssignment());
+
+        if(three instanceof Student5){
+            System.out.println(((Student5) three).getDetails());
+        }
+        else {
+            System.out.println("Nicht kompatibel");
+        }
+        System.out.println(three.getAssignment());
+
+        if(four instanceof Professor5){
+            System.out.println(((Professor5) four).getDetails());
+        }
+        else {
+            System.out.println("Nicht kompatibel");
+        }
+        System.out.println(four.getAssignment());
+
+        if(five instanceof Hochschulperson5){
+            System.out.println(((Hochschulperson5) five).getDetails());
+        }
+        else {
+            System.out.println("Nicht kompatibel");
+        }
+        System.out.println(five.getAssignment());
     }
 }
