@@ -49,7 +49,7 @@ class Hochschulperson5ABCTest {
                 Hochschule:
                 \tHM""");
 
-        hochschulperson = new Hochschulperson5_ABC("Hans Maier", "123456", null, null) {
+        hochschulperson = new Hochschulperson5_ABC("Hans Maier", null, "123456", null) {
             @Override
             public String getDetails() {
                 return null;

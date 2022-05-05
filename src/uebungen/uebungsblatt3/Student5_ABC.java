@@ -21,15 +21,16 @@ public class Student5_ABC extends Hochschulperson5_ABC {
         //String output = super.getDetails();
         StringBuilder output = new StringBuilder();
         if(adresse != null){
-            output.append("Name: \n" + name + "\n");
-            output.append("Telefonnummer: " + telefon + "\n");
-            output.append("Adresse: " + adresse + "\n");
-            output.append(hochschule + ", " + studiengruppe + "\n");
+            output.append("Name:\n\t" + name + "\n");
+            output.append("Telefonnummer:\n\t" + telefon + "\n");
+            output.append("Adresse:\n\t" + adresse + "\n");
+            output.append("Hochschule:\n\t" + hochschule + "\nStudiengruppe:\n\t" + studiengruppe);
         }
         else {
-            output.append("Name: \n" + name + "\n");
-            output.append("Telefonnummer: " + telefon + "\n");
-            output.append(hochschule + ", " + studiengruppe + "\n");
+            output.append("Name:\n\t" + name + "\n");
+            output.append("Telefonnummer:\n\t" + telefon + "\n");
+            output.append("Adresse:\n\tnull\n");
+            output.append("Hochschule:\n\t" + hochschule + "\nStudiengruppe:\n\t" + studiengruppe);
         }
         return output.toString();
         //output += (", " + fakultaet + "\n");
@@ -39,10 +40,10 @@ public class Student5_ABC extends Hochschulperson5_ABC {
     //this method checks wether there is a study group defined for this student or not
     public String getAssignment(){
         if(studiengruppe != null){
-            return "Name: " + name + "\nStudiengruppe: " + studiengruppe + "\n";
+            return "Name:\n\t" + name + "\nStudiengruppe:\n\t" + studiengruppe;
         }
         else {
-            return "Keiner Studiengruppe zugeordnet!\n";
+            return "Keine Studiengruppe hinterlegt!";
         }
     }
 }

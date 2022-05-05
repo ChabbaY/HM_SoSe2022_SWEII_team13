@@ -38,10 +38,10 @@ public abstract class Hochschulperson5_ABC implements Person {
 
     public String getAssignment(){
         if(hochschule != null){
-            return "Name: " + name + "\nHochschule: " + hochschule + "\n";
+            return "Name:\n\t" + name + "\nHochschule:\n\t" + hochschule;
         }
         else {
-            return "Keiner Hochschule zugeordnet!\n";
+            return "Keine Hochschule hinterlegt!";
         }
     }
 }

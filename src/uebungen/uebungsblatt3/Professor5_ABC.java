@@ -21,15 +21,16 @@ public class Professor5_ABC extends Hochschulperson5_ABC{
         //String output = super.getDetails();
         StringBuilder output = new StringBuilder();
         if(adresse != null){
-            output.append("Name: \n" + name + "\n");
-            output.append("Telefonnummer: " + telefon + "\n");
-            output.append("Adresse: " + adresse + "\n");
-            output.append(hochschule + ", " + fakultaet + "\n");
+            output.append("Name:\n\t" + name + "\n");
+            output.append("Telefonnummer:\n\t" + telefon + "\n");
+            output.append("Adresse:\n\t" + adresse + "\n");
+            output.append("Hochschule:\n\t" + hochschule + "\nFakultät:\n\t" + fakultaet);
         }
         else {
-            output.append("Name: \n" + name + "\n");
-            output.append("Telefonnummer: " + telefon + "\n");
-            output.append(hochschule);
+            output.append("Name:\n\t" + name + "\n");
+            output.append("Telefonnummer:\n\t" + telefon + "\n");
+            output.append("Adresse:\n\tnull\n");
+            output.append("Hochschule:\n\t" + hochschule + "\nFakultät:\n\t" + fakultaet);
         }
         return output.toString();
         //output += (", " + fakultaet + "\n");
@@ -38,10 +39,10 @@ public class Professor5_ABC extends Hochschulperson5_ABC{
 
     public String getAssignment(){
         if(fakultaet != null){
-            return "Name: " + name + "\nFakultät: " + fakultaet + "\n";
+            return "Name:\n\t" + name + "\nFakultät:\n\t" + fakultaet;
         }
         else {
-            return "Keiner Fakultät zugeordnet!\n";
+            return "Keine Fakultät hinterlegt!";
         }
     }
 }

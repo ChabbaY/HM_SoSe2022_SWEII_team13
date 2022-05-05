@@ -16,6 +16,7 @@ public class Adresse5 {
     }
 
     public Adresse5(Adresse5 adresse) {
+        if (adresse == null) return;
         this.strasse = adresse.strasse;
         this.hausnummer = adresse.hausnummer;
         this.postleitzahl = adresse.postleitzahl;
@@ -26,6 +27,6 @@ public class Adresse5 {
 
     //Method returns the students adress data in a specific order and format.
     public String toString(){
-        return strasse + " " + hausnummer + "\n" + postleitzahl + " " + ort + ",";
+        return strasse + " " + hausnummer + ", " + postleitzahl + " " + ort;
     }
 }
