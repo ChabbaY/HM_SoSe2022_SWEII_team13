@@ -37,25 +37,26 @@ public class Hochschulperson5 implements Person {
     public String getDetails() {
         StringBuilder output = new StringBuilder();
         if(adresse != null){
-            output.append("Name: \n" + name + "\n");
-            output.append("Telefonnummer: " + telefon + "\n");
-            output.append("Adresse: " + adresse + "\n");
-            output.append(hochschule);
+            output.append("Name:\n\t" + name + "\n");
+            output.append("Telefonnummer:\n\t" + telefon + "\n");
+            output.append("Adresse:\n\t" + adresse + "\n");
+            output.append("Hochschule:\n\t" + hochschule);
         }
         else {
-            output.append("Name: \n" + name + "\n");
-            output.append("Telefonnummer: " + telefon + "\n");
-            output.append(hochschule);
+            output.append("Name:\n\t" + name + "\n");
+            output.append("Telefonnummer:\n\t" + telefon + "\n");
+            output.append("Adresse:\n\tnull\n");
+            output.append("Hochschule:\n\t" + hochschule);
         }
         return output.toString();
     }
 
     public String getAssignment(){
         if(hochschule != null){
-            return "Name: " + name + "\nHochschule: " + hochschule + "\n";
+            return "Name:\n\t" + name + "\nHochschule:\n\t" + hochschule;
         }
         else {
-            return "Keiner Hochschule zugeordnet!\n";
+            return "Keine Hochschule hinterlegt!";
         }
     }
 }

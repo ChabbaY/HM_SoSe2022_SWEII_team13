@@ -20,17 +20,17 @@ public class Student5 extends Hochschulperson5 {
 
     public String getDetails() {
         String output = super.getDetails();
-        output += (", " + studiengruppe + "\n");
+        output += ("\nStudiengruppe:\n\t" + studiengruppe);
         return output;
     }
 
     //this method checks wether there is a study group defined for this student or not
     public String getAssignment(){
         if(studiengruppe != null){
-            return "Name: " + name + "\nStudiengruppe: " + studiengruppe + "\n";
+            return "Name:\n\t" + name + "\nStudiengruppe:\n\t" + studiengruppe;
         }
         else {
-            return "Keiner Studiengruppe zugeordnet!\n";
+            return "Keine Studiengruppe hinterlegt!";
         }
     }
 }

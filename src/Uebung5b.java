@@ -4,7 +4,7 @@ public class Uebung5b {
 
     public static void main(String... args){
 
-        Hochschulperson5_ABC studentSophie = new Student5_ABC("Sophie Mustermann", "01839482728", "HM", Studiengruppe.IB2C);
+        Hochschulperson5_ABC studentSophie = new Student5_ABC("Sophie Mustermann", "01839482728", "HM", Studiengruppe.IB2B);
         System.out.println(studentSophie.getDetails());
         System.out.println(studentSophie.getAssignment());
 
