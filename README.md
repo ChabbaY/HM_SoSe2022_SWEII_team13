@@ -5,6 +5,26 @@
 <hr/>
 
 <h2>
+    <i>Übungsblatt 4</i>
+</h2>
+
+### isSame ###
+    compares this to an [CLASSNAME] hp | prof | stud
+    @param hp | prof | stud: Object to be compared with
+    @return true if same contents
+
+### equals ###
+    compares this to an Object o
+    @param o: Object to be compared with
+    @return true if identical class and same contents
+
+### clone ###
+    deep copy of a [CLASSNAME] object
+    @return new [CLASSNAME] with same content
+
+<hr/>
+
+<h2>
     <i>Übungsblatt 3</i>
 </h2>
 
