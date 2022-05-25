@@ -18,7 +18,6 @@ public class Professor5_ABC extends Hochschulperson5_ABC{
     }
 
     public String getDetails() {
-        //String output = super.getDetails();
         StringBuilder output = new StringBuilder();
         if(adresse != null){
             output.append("Name:\n\t" + name + "\n");
@@ -33,8 +32,6 @@ public class Professor5_ABC extends Hochschulperson5_ABC{
             output.append("Hochschule:\n\t" + hochschule + "\nFakultät:\n\t" + fakultaet);
         }
         return output.toString();
-        //output += (", " + fakultaet + "\n");
-        //return output;
     }
 
     public String getAssignment(){

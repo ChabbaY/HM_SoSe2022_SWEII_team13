@@ -35,7 +35,6 @@ public abstract class Hochschulperson5_ABC implements Person {
 
     public abstract String getDetails();
 
-
     public String getAssignment(){
         if(hochschule != null){
             return "Name:\n\t" + name + "\nHochschule:\n\t" + hochschule;
