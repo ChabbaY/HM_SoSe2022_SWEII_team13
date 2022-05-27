@@ -1,7 +1,5 @@
 package uebungen.uebungsblatt4;
 
-import uebungen.uebungsblatt3.Ort;
-
 public class Adresse6 implements Cloneable {
 
     public String strasse;
@@ -40,16 +38,18 @@ public class Adresse6 implements Cloneable {
         return strasse + " " + hausnummer + ", " + postleitzahl + " " + ort;
     }
 
-    public boolean equals(Object adresse){
-        if(adresse == null)
+    public boolean equals(Object o){
+        if(this == o) return true;
+        if(o == null)
             return false;
-        if(getClass() != adresse.getClass())
+        if(getClass() != o.getClass())
             return false;
-        if(!(getStrasse().equals(((Adresse6)adresse).getStrasse())))
+        Adresse6 adresse = (Adresse6)o;
+        if(!(getStrasse().equals(adresse.getStrasse())))
             return false;
-        if(!(getHausnummer() == ((Adresse6)adresse).getHausnummer()))
+        if(!(getHausnummer().equals((adresse.getHausnummer()))))
             return false;
-        if(!(getOrt().equals(((Adresse6)adresse).getOrt())))
+        if(!(getOrt().equals(adresse.getOrt())))
             return false;
         if(!(getPLZ() == (((Adresse6)adresse).getPLZ())))
             return false;

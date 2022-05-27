@@ -1,7 +1,5 @@
 package uebungen.uebungsblatt4;
 
-import uebungen.uebungsblatt3.Person;
-
 public class Hochschulperson6 implements Person, Cloneable {
 
     protected String name;
@@ -64,25 +62,27 @@ public class Hochschulperson6 implements Person, Cloneable {
         }
     }
 
-    public boolean equals(Object hochschulperson){
-        if(hochschulperson == null)
+    public boolean equals(Object o){
+        if(this == o) return true;
+        if(o == null)
             return false;
-        if(getClass() != hochschulperson.getClass())
+        if(getClass() != o.getClass())
             return false;
-        if(!(getName().equals(((Hochschulperson6)hochschulperson).getName())))
+        Hochschulperson6 hochschulperson = (Hochschulperson6)o;
+        if(!(getName().equals(hochschulperson.getName())))
             return false;
-        if(!(getTelefon().equals(((Hochschulperson6)hochschulperson).getTelefon())))
+        if(!(getTelefon().equals(hochschulperson.getTelefon())))
             return false;
-        if(!(getHochschule() == ((Hochschulperson6)hochschulperson).getHochschule()))
+        if(!(getHochschule().equals(hochschulperson.getHochschule())))
             return false;
         if(this.adresse == null) {
-            if (((Hochschulperson6)hochschulperson).getAdresse() == null) {
+            if (hochschulperson.getAdresse() == null) {
                 return true;
             }
         }
         if(this.adresse != null) {
-            if (((Hochschulperson6) hochschulperson).getAdresse() != null) {
-                if (this.adresse.equals(((Hochschulperson6)hochschulperson).getAdresse()))
+            if (hochschulperson.getAdresse() != null) {
+                if (this.adresse.equals(hochschulperson.getAdresse()))
                     return true;
             }
         }
@@ -90,8 +90,9 @@ public class Hochschulperson6 implements Person, Cloneable {
     }
 
     public boolean isSame(Hochschulperson6 hp){
-        return (hp != null && getClass() == hp.getClass() && getName().equals(hp) && getTelefon().equals(hp) && getHochschule().equals(hp)
-                && ((this.adresse == null && hp.getAdresse() == null) || (this.adresse != null && hp.getAdresse() != null)) && getAdresse().equals(hp));
+        return (hp != null && getClass() == hp.getClass()
+                && getName().equals(hp.getName()) && getTelefon().equals(hp.getTelefon()) && getHochschule().equals(hp.getHochschule())
+                && ((this.adresse == null && hp.getAdresse() == null) || (this.adresse != null && getAdresse().equals(hp.getAdresse()))));
     }
 
     @Override

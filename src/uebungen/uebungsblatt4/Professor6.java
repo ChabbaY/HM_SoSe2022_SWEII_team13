@@ -34,6 +34,10 @@ public class Professor6 extends Hochschulperson6 implements Cloneable {
         }
     }
 
+    public boolean isSame(Professor6 prof){
+        return (super.isSame(prof) && getFakultaet().equals(prof.getFakultaet()));
+    }
+
     public Professor6 clone()
             throws CloneNotSupportedException
     {
