@@ -1,7 +1,5 @@
 package uebungen.uebungsblatt4;
 
-import uebungen.uebungsblatt4.Studiengruppe;
-
 public class Student6 extends Hochschulperson6 implements Cloneable {
 
     public Studiengruppe studiengruppe;
