@@ -1,17 +1,17 @@
 package uebungen.uebungsblatt4;
 
-import uebungen.uebungsblatt3.Studiengruppe;
+import uebungen.uebungsblatt4.Studiengruppe;
 
 public class Student6 extends Hochschulperson6 implements Cloneable {
 
     public Studiengruppe studiengruppe;
 
 
-    public Student6(String name, String telefon, String hochschule, uebungen.uebungsblatt3.Studiengruppe studiengruppe) {
+    public Student6(String name, String telefon, String hochschule, Studiengruppe studiengruppe) {
         super(name, telefon, hochschule);
         this.studiengruppe = studiengruppe;
     }
-    public Student6(String name, Adresse6 adresse, String telefon, String hochschule, uebungen.uebungsblatt3.Studiengruppe studiengruppe)
+    public Student6(String name, Adresse6 adresse, String telefon, String hochschule, Studiengruppe studiengruppe)
             throws CloneNotSupportedException
     {
         super(name, adresse, telefon, hochschule);
@@ -39,7 +39,7 @@ public class Student6 extends Hochschulperson6 implements Cloneable {
     }
 
     public boolean isSame(Student6 stud){
-        return (super.isSame(stud) && getStudiengruppe() != null && getStudiengruppe() == stud.getStudiengruppe());
+        return (super.isSame(stud) && getStudiengruppe() == stud.getStudiengruppe());
     }
 
     @Override

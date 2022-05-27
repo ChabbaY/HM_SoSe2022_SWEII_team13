@@ -11,7 +11,7 @@
 ### isSame ###
     compares this to an [CLASSNAME] hp | prof | stud
     @param hp | prof | stud: Object to be compared with
-    @return true if same contents
+    @return true if identical class and same contents
 
 ### equals ###
     compares this to an Object o
