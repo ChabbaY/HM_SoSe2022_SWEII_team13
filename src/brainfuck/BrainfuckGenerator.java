@@ -3,11 +3,18 @@ package brainfuck;
 import java.io.*;
 
 public class BrainfuckGenerator {
-    final static String path = "src/brainfuck/Adresse7.txt";
-    final static String out = "src/brainfuck/Adresse7.bf";
+    final static String path_root = "src/brainfuck/";
+    static String path;
+    static String out;
+
+    static String[] items = {"Adresse7", "AdressException", "Hochschulperson7", "Ort", "Person", "Professor7", "Student7", "Studiengruppe", "Uebung7"};
 
     public static void main(String[] args) {
-        writeResult(generateBrainfuck(readFromFile()));
+        for (String item : items) {
+            path = path_root + item + ".txt";
+            out = path_root + item + ".bf";
+            writeResult(generateBrainfuck(readFromFile()));
+        }
     }
 
     //one line ascii numbers
