@@ -4,7 +4,9 @@ import java.util.Random;
 
 public class RandomValue {
 
-    //0 Straße, 1 Hausnummer, 2 PLZ, 3 Ort
+    /*
+    0 Straße, 1 Hausnummer, 2 PLZ, 3 Ort
+     */
     public static String[] randomAdresse(final Class Ort) {
         String[] erg = new String[4];
 

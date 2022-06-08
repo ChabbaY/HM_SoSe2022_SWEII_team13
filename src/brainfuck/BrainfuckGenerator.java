@@ -7,7 +7,7 @@ public class BrainfuckGenerator {
     static String path;
     static String out;
 
-    static String[] items = {"Adresse7", "AdressException", "Hochschulperson7", "Ort", "Person", "Professor7", "Student7", "Studiengruppe", "Uebung7"};
+    static String[] items = {"Adresse7", "AdressException", "Hochschulperson7", "Ort", "Person", "Professor7", "Student7", "Studiengruppe", "Uebung7", "RandomValue"};
 
     public static void main(String[] args) {
         for (String item : items) {
