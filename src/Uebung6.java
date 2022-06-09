@@ -1,6 +1,5 @@
 import uebungen.uebungsblatt4.*;
 import general.RandomValue;
-import uebungen.uebungsblatt4.Studiengruppe;
 
 public class Uebung6 {
 
